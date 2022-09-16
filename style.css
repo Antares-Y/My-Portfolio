@@ -1,0 +1,1136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+@import url('http://fonts.cdnfonts.com/css/f-floren');
+@import url('http://fonts.cdnfonts.com/css/dunkin-lyons');
+@import url('http://fonts.cdnfonts.com/css/hioganke');
+@import url('http://fonts.cdnfonts.com/css/claris-sans');
+
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+::before, ::after{
+    box-sizing: border-box;
+}
+
+.god
+{
+    min-height: 100vh;
+    display: block;
+    /* position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0; */
+    padding: 0 30px;
+    /* background: #0e1525; */
+    background: #16151d;
+}
+
+.main
+{
+    padding-left: 270px;
+}
+
+.nav-bar
+{
+    width: 270px;
+    /* background: #2b3245; */
+    background: #312f40;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* border-right: 2px solid #30363d; */
+    border-right: 1px solid #2f2e2e;
+}
+
+.nav-bar .logo img{
+    width: 95px;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    position: absolute;
+    top: 50px;
+    margin-left: 23px;
+    animation-name: madara;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes madara
+{
+    5%{border-color: red;}
+    10%{border-color: blue;}
+    15%{border-color: cyan;}
+    20%{border-color: purple;}
+    25%{border-color: yellow;}
+    30%{border-color: green;}
+    35%{border-color: darkblue;}
+    40%{border-color: gold;}
+    45%{border-color: maroon;}
+    50%{border-color: teal;}
+    55%{border-color: magenta;}
+    60%{border-color: pink;}
+    65%{border-color: navy;}
+    70%{border-color: coral;}
+    75%{border-color: silver;}
+    80%{border-color: brown;}
+    85%{border-color: maroon;}
+    90%{border-color: midnightblue;}
+    95%{border-color: rgb(102, 47, 47);}
+    100%{border-color: rgb(70, 70, 141);}
+}
+
+
+.nav-bar h1{
+    position: absolute;
+    top: 135px;
+    margin-left: 13px;
+    text-align: center;
+    /* color: rgb(145, 76, 76); */
+    color: white;
+    font-family: 'Combo', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+ul{
+    list-style: none;
+    margin-top: 20px;
+    position: relative;
+    top: 65px;
+}
+
+ul li{
+    padding: 5px 20px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid grey;
+}
+
+ul li #active:active{
+    color: #913fe2;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    /* border-bottom: 1px solid grey; */
+    line-height: 2;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+ul li a:hover{
+    color: #913fe2;
+}
+
+ul li a .fa{
+    margin-right: 6px;
+}
+
+/* Main Section maybe */
+.zeus
+{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.hades
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;   
+}
+
+.athena
+{
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.poseidon
+{
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+}
+
+.devil
+{
+    min-height: 100vh;    
+    display: flex;
+    /* background: #0e1525; */
+    color: white;
+}
+
+.argh
+{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.poseidon img
+{
+    height: 410px;
+    border-color: #0e1525;
+    border-radius: 10px;
+}
+
+.poseidon::before
+{
+    content: '';
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    border-left: 10px solid #913fe2;
+    border-top: 10px solid #913fe2;
+    left: 20px;
+    top: -40px;
+    border-radius: 10px;
+}
+
+.poseidon::after
+{
+    content: '';
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    border-right: 10px solid #913fe2;
+    border-bottom: 10px solid #913fe2;
+    right: 20px;
+    bottom: -40px;
+    border-radius: 10px;
+}
+
+.athena h2
+{
+    font-size: 30px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.athena .man
+{
+    font-family: 'Hioganke', sans-serif;
+    color: #913fe2;
+}
+.athena .woman
+{
+    font-family: 'Hioganke', sans-serif;
+    color: #913fe2;
+}
+.athena .men
+{
+    color: #913fe2;
+    font-family: 'f Floren', sans-serif;
+}
+
+.athena p{
+    font-size: 20px;
+    margin-bottom: 70px;
+    font-weight: 600;
+}
+
+.athena .chronos
+{
+    color: white;
+    padding: 8px 30px;
+    border: 2px solid white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 50px;
+    background-color: #913fe2;
+    white-space: nowrap;
+    display: inline-block;
+    transition: all .3s;
+    font-family: 'Dunkin Lyons', sans-serif;
+}
+
+.chronos:hover
+{
+    border-color: #913fe2;
+    transform: translateY(-5px);
+}
+
+/* .hidden
+{
+    display: none !important;
+} */
+
+/* About me part */
+.loki
+{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.what h1
+{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 15px 15px 3px 15px;
+    border-bottom: 1px solid #913fe2;
+}
+#twstt
+{
+    color: #913fe2;
+}
+
+.sigh
+{
+    margin-top: 1.5rem;
+}
+
+.sigh h1
+{
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.sigh p
+{
+    color: white;
+}
+
+.hades .info
+{
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-top: 40px;
+}
+
+.hades .skill
+{
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 40px;
+}
+
+.hades .info .info-item
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.hades .info .info-item p
+{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(110, 101, 101);
+}
+
+.hades .info .info-item p span
+{
+    color: #913fe2;
+    font-family: 'Dunkin Lyons', sans-serif;
+    font-weight: 500;
+    margin-left: 4px;
+    display: inline-block;
+}
+
+.hades .hermes
+{
+    color: white;
+    padding: 8px 30px;
+    border: 2px solid white;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 50px;
+    background-color: #913fe2;
+    white-space: nowrap;
+    display: inline-block;
+    margin-top: 4rem;
+    font-family: 'Dunkin Lyons', sans-serif;
+    transition: all .3s;
+}
+
+.hades .hermes:hover
+{
+    border-color: #913fe2;
+    transform: translateY(-5px);
+}
+.exp
+{
+    margin-top: 40px;
+}
+.exp .box
+{
+    width: 300px;
+    background: #312f40;
+    border-radius: 10px;
+    justify-content: center;
+    margin-left: 10px;
+}
+.box img
+{
+    width: 100px;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.box h3
+{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+.box h3 span
+{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    color: #913fe2;
+    font-family: 'f Floren', sans-serif;
+    font-weight: 700;
+}
+
+
+/* Skills Section */
+
+.wiw h1
+{
+    color: #913fe2;
+    font-size: 30px;
+    margin-bottom: 1rem;
+    font-family: 'f Floren', sans-serif;
+    font-weight: 700;
+    padding: 10px 5px;
+    border-bottom: 1px solid rgb(56, 53, 53);
+    line-height: 1;
+}
+
+.hades .tehee
+{
+    margin-top: 40px;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+
+.hades .picture
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 33px;
+}
+
+.hades .picture img
+{
+    width: 470px;
+    height: 350px;
+    border-radius: 20px;
+    margin-top: 3.5rem;
+}
+
+.wiw h1
+{
+    text-align: center;
+}
+
+.tehee .skills .skill-item
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.tehee .skills .skill-item h5
+{
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    text-transform: capitalize;
+}
+
+.tehee .skills .skill-item .progress
+{
+    background-color: #2f2e2e;
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+
+.tehee .skills .skill-item
+{
+    margin-bottom: 25px;
+}
+
+.tehee .skills .skill-item .progress .progress-in
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: #913fe2;
+}
+
+.tehee .skills .skill-item .skill-percent
+{
+    position: absolute;
+    right: 0;
+    color: #913fe2;
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+
+
+/* Another Part */
+/* 
+.edu
+{
+    margin-top: 3rem;
+}
+
+.edu h1
+{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 15px 15px 3px 15px;
+    border-bottom: 1px solid #913fe2;
+}
+
+.hades .educ, .hades .exper
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
+
+.hades .educ h3
+{
+    font-size: 24px;
+    color: #913fe2;
+    margin-bottom: 30px;
+}
+
+.hades .exper h3
+{
+    font-size: 24px;
+    color: #913fe2;
+    margin-bottom: 30px;
+}
+
+.hades .inside
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.hades .inside .inside-content
+{
+    background-color: #312f40;
+    padding: 30px 15px;
+    border: 1px solid rgb(82, 70, 70);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.hades .inside .inside-content .inside-item
+{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+
+.hades .inside .inside-content .inside-item:last-child
+{
+    padding-bottom: 0;
+}
+
+.hades .inside .inside-content .inside-item::before
+{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background: #913fe2;
+}
+
+.hades .inside .inside-content .dot
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #913fe2;
+}
+
+.hades .inside .inside-content .hoha
+{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #913fe2;
+}
+
+.hades .inside .inside-content .hoha .fas
+{
+    margin-right: 5px;
+}
+
+.hades .inside .inside-content .inside-title
+{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: #913fe2;
+}
+
+.hades .inside .inside-content .inside-text
+{
+    font-size: 16px;
+    text-align: justify;
+    color: white;
+    line-height: 25px;
+}
+ */
+
+
+
+/* Educaton part  */
+
+.titlee
+{
+    margin-top: 50px;
+}
+
+.titlee h1
+{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    /* padding: 15px 15px 3px 15px; */
+    border-bottom: 1px solid #913fe2;
+}
+
+.topp
+{
+    margin-top: 40px;
+}
+
+.bell 
+{
+    margin-bottom: 30px;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    justify-content: space-between;
+}
+
+.bell .bell-item
+{
+    width: 300px;
+    margin: 30px 10px;
+    padding-left: 20px;
+    border-left: .2rem solid #913fe2;
+    position: relative;
+}
+
+.bell .bell-item span
+{
+    font-size: 1.3rem;
+    background: #312f40;
+    color: white;
+    border-radius: 5rem;
+    padding: 5px 15px;
+    margin-left: 5px;
+}
+
+.bell .bell-item h5
+{
+    font-size: 20px;
+    color: #913fe2;
+    padding-top: 10px;
+}
+
+.bell .bell-item p
+{
+    font-size: 16px;
+    color: white;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.bell .bell-item i
+{
+    position: absolute;
+    top: -7px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background: #913fe2;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+/* Services part  */
+
+.jojo .god
+{
+    padding-bottom: 40px;
+}
+
+.titl
+{
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.titl h1
+{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    border-bottom: 1px solid #913fe2;
+}
+
+.joseph
+{
+    margin-bottom: 30px;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.joseph .hermit
+{
+    background-color: #312f40;
+    border: 1px solid #4b4646;
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: .3s all ease;
+}
+
+.joseph .hermit:hover
+{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    transform: translateY(-5px);
+}
+
+.joseph .hermit .purple
+{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.joseph .hermit .purple i
+{
+    font-size: 55px;
+    line-height: 60px;
+    color: white;
+}
+
+.joseph .hermit h4
+{
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #913fe2;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Claris Sans', sans-serif;
+}
+
+.joseph .hermit p
+{
+    font-size: 16px;
+    line-height: 25px;
+    color: white;
+    font-family: 'Claris Sans', sans-serif;
+    font-weight: 500;
+}
+
+
+/* Creations  */
+
+.jotaro .god
+{
+    padding-bottom: 40px;
+}
+.star h2
+{
+    font-size: 30px;
+    color: #913fe2;
+    font-weight: 500;
+}
+
+.star
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.create
+{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+
+.create .create-inner
+{
+    width: 350px;
+}
+
+.create .create-inner .create-img img
+{
+    width: 100%;
+    display: block;
+    transition: .3s all ease;
+}
+
+.create .create-inner .create-img:hover img
+{
+    transform: scale(1.2);
+}
+
+.create .create-inner .create-img
+{
+    border: 1px solid rgb(58, 55, 55);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+
+
+/* Contact Section  */
+
+.titl span
+{
+    color: #913fe2;
+}
+
+#mudamuda
+{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.owari
+{
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+}
+
+.owari .owari-icon
+{
+    display: inline-block;
+}
+
+.owari .owari-icon .fas
+{
+    font-size: 40px;
+    color: #913fe2;
+    margin-top: 20px;
+}
+
+.owari h3
+{
+    font-size: 25px;
+    font-weight: 700;
+    color: #913fe2;
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+
+.owari p
+{
+    font-size: 20px;
+    line-height: 25px;
+    color: white;
+}
+
+#oraora
+{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    margin-top: 60px;
+    text-align: center;
+    color: #4d4b4e;
+}
+
+.scream-icon
+{
+    margin-top: 40px;
+}
+
+.scream-icon a
+{
+    padding: 10px 15px;
+}
+
+
+.scream-icon a .fab
+{
+    font-size: 40px;
+    text-align: center;
+    color: #913fe2;
+    margin-bottom: 10px;
+}
+
+
+.zahahaha
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative; 
+    justify-content: center;
+}
+
+
+@media (max-width: 1199px)
+{
+    .god .fa
+    {
+        display: block;
+    }
+    .nav-bar
+    {
+        left: -270px;
+    }
+    .main
+    {
+        padding-left: 0;
+    }
+    .info .info-item p span
+    {
+        display: block;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1020px)
+{
+    .poseidon::before
+    {
+        left: 5px;
+    }
+    .poseidon::after
+    {
+        right: 5px;
+    }
+}
+
+@media (max-width: 995px)
+{
+    .bell
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }   
+    .bell .bell-item
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 400px;
+    }
+    .hades .picture .pic img
+    {
+        width: 440px;
+        height: 350px;
+        border-radius: 20px;
+        margin-top: 3.5rem;
+    }
+    .create
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .joseph
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .create .create-inner
+    {
+        width: 400px;
+    }
+}
+
+@media (max-width: 920px)
+{
+    .poseidon img
+    {
+        display: none;
+        border: none;
+    }
+    .poseidon::before
+    {
+        display: none;
+    }
+    .poseidon::after
+    {
+        display: none;
+    }
+    .athena
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .hades .picture .pic img
+    {
+        width: 400px;
+    }
+}
+
+@media (max-width: 885px)
+{
+    .hades .info
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .exp .box
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 875px)
+{
+    .hades .picture .pic img
+    {
+        width: 370px;
+    }
+}
+
+@media (max-width: 805px)
+{
+    .hades .picture .pic img
+    {
+        display: none;
+    }
+    .hades .tehee
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .owari 
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 795px)
+{
+    .create .create-inner
+    {
+        width: 350px;
+    }
+}
+
+@media (max-width: 670px)
+{
+    .bell
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .bell .bell-item
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 450px;
+    }
+    .joseph
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .create
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .owari
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .create .create-inner
+    {
+        width: 450px;
+    }
+}
+
+@media (max-width: 465px)
+{
+    .create .create-inner
+    {
+        width: 400px;
+    }
+}
+
+@media (max-width: 450px)
+{
+    .create .create-inner
+    {
+        width: 350px;
+    }
+}
+
